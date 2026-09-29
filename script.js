@@ -11,7 +11,9 @@ function somaMaior() {
       console.log("fim!")
     
     }
+
 }
+
 function tempoCasamento() {
     let nome = String(prompt("Digite seu nome:")).toUpperCase();
     let genero = String(prompt("Qual seu gênero? 'M' ou 'F'?")).toUpperCase();
@@ -49,5 +51,21 @@ if (numero % 2 === 0 ) {
     imparPar();
 
 }
+}
+
+function valoresIguais() {
+    let a = parseInt(prompt("Digite um número:"));
+    let b = parseInt(prompt("Digite outro número:"));
+
+    if (a === b) {
+        let c = a + b;
+        alert("A soma de A + B é: " + c);
+    } else {
+        let c = a * b;
+        alert("O produto de A * B é: " + c);
+    }
+
+
 
 }
+
