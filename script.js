@@ -65,7 +65,36 @@ function valoresIguais() {
         alert("O produto de A * B é: " + c);
     }
 
+}
+
+function valorPositivoNegativo() {
+    let numero = Number(prompt("Digite um número, positivo ou negativo:"));
+
+        if (numero < 0) {
+            let resultado = numero * 3;
+            alert("O triplo de " + numero + " é: " + resultado);
+        } else {
+            let resultado = numero * 2;
+            alert("O dobro de " + numero + " é: " + resultado);
+        }
 
 
+
+        }
+
+function valorBooleano() {
+    let bool1 = Boolean(Number(prompt("Digite '1' para true ou '0' para false: ")));
+    let bool2 = Boolean(Number(prompt("Digite '1' para true ou '0' para false: ")));
+
+    console.log(bool1);
+    console.log(bool2);
+
+       if(bool1 == true && bool2 == true) {
+        alert("Ambos são verdadeiros.");
+       } else if (bool1 == false && bool2 == false) {
+        alert("Ambos são falsos.");
+       } else {
+        alert("Que que tá acontecendo?");
+       }
 }
 
