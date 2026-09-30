@@ -98,3 +98,21 @@ function valorBooleano() {
        }
 }
 
+function lerVariaveis() {
+
+  let variavel = Number(prompt("Digite um número: "));
+
+  if (variavel % 2 === 0) {
+    let soma = variavel + 5
+   alert("A resposta é: " + soma);
+} else {
+    let soma = variavel + 8
+    alert("A resposta é: " + soma);
+}
+
+}
+
+
+
+
+
