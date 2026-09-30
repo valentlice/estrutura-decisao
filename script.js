@@ -112,7 +112,85 @@ function lerVariaveis() {
 
 }
 
+function ordenarDecrescente() {
+  let a = parseInt(prompt("Digite o valor de A:"));
+  let b = parseInt(prompt("Digite o valor de B:"));
+  let c = parseInt(prompt("Digite o valor de C:"));
+
+  if (a > b && a > c) {
+    if (b > c) {
+        alert(`${a}, ${b}, ${c}`);
+    } else {
+        alert(`${a}, ${c}, ${b}`);
+    }
+
+  } else if (b > a && b > c) {
+    if (c > a) {
+        alert(`${b}, ${c}, ${a}`);
+    } else {
+        alert(`${b}, ${a}, ${c}`);
+    }
+   
+  } else { 
+    if (b > a) {
+        alert(`${c}, ${b}, ${a}`);
+    } else {
+        alert(`${c}, ${a}, ${b}`);
+    }
+    
+  }
 
 
+}
+
+function pesoIdeal() {
+     let altura = parseFloat(prompt("Digite sua altura em metros: (Ex.: 1.80)"));
+     let genero = prompt("Digite seu gênero (EX.: M ou F):").toUpperCase();
+     let pesoIdeal;
+
+     switch (genero) {
+     case "M":
+             pesoIdeal = (72.7 * altura) - 58;
+         break;
+     case "F":
+             pesoIdeal = (62.1 * altura) - 44.7;
+         break;
+     default:
+            alert("Gênero informado é inválido.");
+         return;
+         
+     }
+     alert(`O peso ideal é ${pesoIdeal.toFixed(2)} kg.`);
+
+}
+
+function descobrirImc() {
+   let peso = parseFloat(prompt("Digite seu peso em kg:"));
+   let altura = parseFloat(prompt("Digite sua altura em metros: (Ex.: 1.80)"));
+   const imc = peso / (altura ** 2);
+   let condicao;
+
+      switch (true) {
+
+    case imc < 18.5:
+         condicao = "Abaixo do peso";
+        break;
+    case imc >= 18.5 && imc < 25:
+            condicao = "Peso normal";
+            break;
+    case imc >= 25 && imc < 30:
+                condicao = "Acima do peso";
+                break;
+    case imc >= 30:
+                    condicao = "Obeso";
+                    break;
+    default:
+        alert('Impossivel de calcular o IMC com os dados fornecidos.');
+
+ }
+    alert(`IMC: ${imc.toFixed(2)}
+          Condição: ${condicao}`);
+
+}
 
 
